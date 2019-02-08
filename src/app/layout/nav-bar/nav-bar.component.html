@@ -1,0 +1,10 @@
+<nav>
+  <mat-toolbar>
+    <span>{{title}}</span>
+    <button mat-button [matMenuTriggerFor]="petMenu" (click)="openIcon()">Pets <mat-icon>{{iconType}}</mat-icon></button>
+    <mat-menu (closed)="closeIcon()" #petMenu="matMenu">
+      <button mat-menu-item>Ripley</button>
+      <button mat-menu-item>Cambria</button>
+    </mat-menu>
+  </mat-toolbar>
+</nav>
