@@ -5,10 +5,13 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { PageHeadingComponent } from './page-heading/page-heading.component';
+import { PageLayoutComponent } from './page-layout/page-layout.component';
+import { PageContentComponent } from './page-content/page-content.component';
 
 
 @NgModule({
-  declarations: [NavBarComponent],
+  declarations: [NavBarComponent, PageHeadingComponent, PageLayoutComponent, PageContentComponent],
   imports: [
     CommonModule,
     MatButtonModule,
@@ -17,7 +20,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatIconModule
   ],
   exports: [
-    NavBarComponent
+    NavBarComponent,
+    PageHeadingComponent,
+    PageLayoutComponent,
+    PageContentComponent
   ]
 })
 export class LayoutModule { }
